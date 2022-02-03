@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/nestjs-pino-peer-deps",
+  "sourceRoot": "apps/nestjs-pino-peer-deps/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/nestjs-pino-peer-deps/tsconfig.app.json"
+  },
+  "projects": {
+    "nestjs-pino-peer-deps": {
+      "type": "application",
+      "root": "apps/nestjs-pino-peer-deps",
+      "entryFile": "main",
+      "sourceRoot": "apps/nestjs-pino-peer-deps/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nestjs-pino-peer-deps/tsconfig.app.json"
+      }
+    },
+    "app": {
+      "type": "application",
+      "root": "apps/app",
+      "entryFile": "main",
+      "sourceRoot": "apps/app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/app/tsconfig.app.json"
+      }
+    }
+  }
+}
